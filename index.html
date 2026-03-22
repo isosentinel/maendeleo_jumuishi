@@ -1,13 +1,60 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Maendeleo Jumuishi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MAENDELEO JUMUISHI</div>
+
+    <nav>
+        <a onclick="showHome()">Nyumbani</a>
+        <a onclick="filterPosts('kisiasa')">Kisiasa</a>
+        <a onclick="filterPosts('kiuchumi')">Kiuchumi</a>
+        <a onclick="filterPosts('kijamii')">Kijamii</a>
+        <a onclick="filterPosts('diplomasia')">Diplomasia</a>
+        <a onclick="filterPosts('sera')">Sera</a>
+        <a onclick="filterPosts('nakala')">Nakala</a>
+    </nav>
+</header>
+
+<div class="marquee">
+    <div class="track">✨ Ninaamini katika zama mpya za maendeleo jumuishi ✨</div>
+</div>
+
+<!-- HOME VIEW -->
+<section id="homeView">
+
+<section class="hero">
+    <h1>Zama Mpya za Maendeleo Jumuishi</h1>
+    <p>Jukwaa la kisasa la siasa, uchumi na diplomasia</p>
+</section>
+
+<section id="posts"></section>
+
+</section>
+
+<!-- POST VIEW (hidden) -->
+<section id="postView" class="hidden">
+    <button class="backBtn" onclick="goBack()">← Rudi</button>
+    <div id="fullPost"></div>
+</section>
+
+<footer>
+    <p>Designer: <strong>Deogratius Malingula</strong></p>
+    <p>Ninaamini katika zama mpya za maendeleo jumuishi</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
